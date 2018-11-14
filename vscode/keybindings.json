@@ -26,4 +26,14 @@
     "key": "alt+cmd+c",
     "command": "copyFilePath"
   },
+  {
+    "key": "cmd+e",
+    "command": "calva.evaluateSelection",
+    "when": "editorLangId == 'clojure'"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "calva.openREPLTerminal",
+    "when": "editorLangId == 'clojure'"
+  },
 ]

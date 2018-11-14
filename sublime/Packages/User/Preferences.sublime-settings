@@ -1,0 +1,100 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": false,
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"convert_path": "/usr/local/bin/convert",
+	"copy_with_empty_selection": true,
+	"detect_slow_plugins": true,
+	"drag_text": false,
+	"draw_minimap_border": false,
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".tags*",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.log",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		"*.class",
+		"*.psd",
+		"*.db"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".svn",
+		".hg",
+		"CVS",
+		".sass-cache",
+		".bundle",
+		"bundle",
+		".rbx",
+		"bin",
+		"tmp",
+		"log"
+	],
+	"font_face": "Fira Code Retina",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 18,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"match_brackets_content": false,
+	"match_selection": true,
+	"match_tags": false,
+	"material_theme_tree_headings": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "disabled",
+	"preview_on_click": true,
+	"remember_open_files": true,
+	"reveal-on-activate": true,
+	"rulers":
+	[
+		100
+	],
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"scroll_speed": 5.0,
+	"show_full_path": true,
+	"sidebar_default": true,
+	"sidebar_row_padding_medium": true,
+	"sidebar_size_12": true,
+	"status_bar_brighter": true,
+	"tab_size": 2,
+	"tabs_medium": true,
+	"tabs_padding_medium": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

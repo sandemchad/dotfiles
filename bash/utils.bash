@@ -10,6 +10,7 @@ alias rails-test-diff="git diff --name-only master... | grep test | xargs rails 
 alias f="RAILS_ENV=development foreman start -f Procfile.dev"
 alias rails-worker="QUEUE=* bundle exec rake environment resque:work TERM_CHILD=1"
 alias rails-server="be rails s"
+alias webpack-server="./bin/webpack-dev-server"
 
 # Terraform
 tp() {

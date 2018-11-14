@@ -2,12 +2,11 @@
   ui = true
   status = auto
 [user]
-  name = Paul Prestidge
-  email = paul.prestidge@optimalworkshop.com 
-	signingkey = 9ED772A33E25ABD2
+  name = Chad Sandeman
+  email = chad@optimalworkshop.com
 [core]
 	editor = vim
-	excludesfile = /Users/paul/.gitignore_global
+	excludesfile = /Users/chad/.gitignore_global
 	autocrlf = false
 [push]
 	default = simple
@@ -31,7 +30,7 @@
 	autoStash = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

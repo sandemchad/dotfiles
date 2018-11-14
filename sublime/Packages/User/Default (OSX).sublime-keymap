@@ -1,0 +1,102 @@
+[
+      // Convert single quote string to double quoted string and vice versa
+    // Will handle escaping or unescaping quotes within the string
+    {
+        "keys": ["ctrl+alt+super+q"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+                "command": "bh_modules.swapquotes"
+            }
+        }
+    },
+
+        // Surround selection with brackets from quick panel
+    {
+        "keys": ["ctrl+alt+super+p"],
+        "command": "wrap_brackets"
+    },
+
+        // Select text between brackets
+    {
+        "no_outside_adj": true,
+        "keys": ["ctrl+shift+n"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
+            }
+        }
+    },
+    // Select text including brackets
+    {
+        "keys": ["ctrl+shift+m"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"always_include_brackets": true}
+            }
+        }
+    },
+
+    { "keys": ["command+e"],
+      "command": "sql_beautifier",
+    "context":
+       [
+          { "key": "selector", "operator": "notequal", "operand": "text.html, source.yaml, meta.erb" }
+       ]
+    },
+
+    // create an ERB tag
+
+    { "keys": ["command+e"],
+      "command": "insert_snippet",
+      "args":
+      {
+        "contents": "<% $1 %>\n${0:$TM_SELECTED_TEXT}\n<% end %>",
+      },
+    "context":
+       [
+          { "key": "selector", "operator": "equal", "operand": "text.html, source.yaml, meta.erb" }
+       ]
+    },
+
+    // create an ERB tag
+
+    { "keys": ["command+shift+e"],
+      "command": "insert_snippet",
+      "args":
+      {
+        "contents": "<%$1 ${0:$TM_SELECTED_TEXT} %>",
+      },
+    "context":
+       [
+          { "key": "selector", "operator": "equal", "operand": "text.html, source.yaml, meta.erb" }
+       ]
+    },
+
+    // create an should tag
+
+    { "keys": ["command+alt+h"],
+      "command": "insert_snippet",
+      "args":
+      {
+        "contents": "should \"$1\" do\n ${0:$TM_SELECTED_TEXT}\nend",
+      }
+    },
+
+]
