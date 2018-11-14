@@ -6,7 +6,7 @@
   email = chad@optimalworkshop.com
 [core]
 	editor = vim
-	excludesfile = /Users/chad/.gitignore_global
+	excludesfile = "$HOME"/.gitignore_global
 	autocrlf = false
 [push]
 	default = simple
