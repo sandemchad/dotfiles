@@ -12,3 +12,7 @@ source ~/dotfiles/bash/aws.bash
 source ~/dotfiles/bash/git.bash
 source ~/dotfiles/bash/ow.bash
 source ~/dotfiles/bash/prompt.bash
+# export PATH="/usr/local/opt/openssl/bin:$PATH"
+# export LDFLAGS="-L/usr/local/opt/openssl/lib"
+# export CPPFLAGS="-I/usr/local/opt/openssl/include"
+# export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"

@@ -16,7 +16,6 @@ ln -sfv "$DOTFILES_DIR/atom/styles.less" ~/.atom
 
 ln -sfv "$DOTFILES_DIR/bin" ~/bin
 
-# TODO: VS Code symbolic links
 # TODO: Sublime symbolic links
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -26,8 +25,12 @@ brew upgrade
 brew install brew-cask
 brew tap caskroom/versions
 
-brew install nvm git gnupg gpg-agent imagemagick rbenv hub vim postgresql mysql56 redis phantomjs node ghostscript cowsay ffmpegn Caskroom/cask/wkhtmltopdf
-brew cask install visual-studio-code amethyst iterm2 google-chrome spotify firefox vlc flux slack sourcetree colordiff 1password
+brew install nvm git gnupg imagemagick rbenv hub vim postgresql mysql56 redis node ghostscript cowsay ffmpeg colordiff
+brew cask install sublime-text visual-studio-code amethyst iterm2 google-chrome spotify firefox vlc flux slack sourcetree 1password phantomjs sequel-pro
+
+# symbolic link VS Code
+ln -sfv "$DOTFILES_DIR/vscode/keybindings.json" ~/Library/Application\ Support/Code/User
+ln -sfv "$DOTFILES_DIR/vscode/settings.json" ~/Library/Application\ Support/Code/User
 
 rbenv install 2.4.1
 rbenv global 2.4.1

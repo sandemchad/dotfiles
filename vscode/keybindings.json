@@ -36,4 +36,9 @@
     "command": "calva.openREPLTerminal",
     "when": "editorLangId == 'clojure'"
   },
+  {
+    "key": "shift+cmd+e",
+    "command": "erb.toggleTags",
+    "when": "editorTextFocus && editorLangId == erb"
+  },
 ]
