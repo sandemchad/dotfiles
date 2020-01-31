@@ -41,4 +41,34 @@
     "command": "erb.toggleTags",
     "when": "editorTextFocus && editorLangId == erb"
   },
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.action.editorLayoutSingle"
+  },
+  {
+    "key": "ctrl+shift+3",
+    "command": "workbench.action.editorLayoutThreeColumns"
+  },
+  {
+    "key": "ctrl+shift+2",
+    "command": "workbench.action.editorLayoutTwoColumns"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  }
+  {
+    "key": "shift+cmd+p",
+    "command": "editor.action.insertSnippet",
+    "when": "editorHasSelection",
+    "args": {
+      "langId": "ruby",
+      "name": "puts_around_line"
+    }
+  }
 ]

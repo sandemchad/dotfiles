@@ -13,7 +13,7 @@
   "files.autoSave": "onFocusChange",
   "editor.scrollBeyondLastLine": true,
   "editor.mouseWheelScrollSensitivity": 1,
-  "window.title": "${activeEditorFull}${separator}${rootName}",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
   "editor.tabSize": 2,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -23,10 +23,6 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
   "editor.fontSize": 14,
-  "ruby.rubocop.executePath": "/Users/chad/.rvm/gems/ruby-2.3.7@spacewaffle/bin/",
-  "ruby.rubocop.configFilePath": "/Users/chad/spacewaffle/.rubocop.yml",
-  "ruby.lintDebounceTime": 500,
-  "ruby.intellisense": "rubyLocate",
   "search.exclude": {
     "**/.git": true,
     "**/node_modules": true,
@@ -40,6 +36,7 @@
     "**/postcssrc.yml": true,
     "**/rubocop.yml": true,
     "**/babelrc": true,
+    "**/public/packs": true,
   },
   "files.exclude": {
     "**/.git": true,
@@ -68,7 +65,37 @@
     "**/bundle/**": true,
     "**/babelrc/**": true,
   },
+  // Linting rules
+  "ruby.lint": {
+    "rubocop": true,
+  },
+  "ruby.lintDebounceTime": 500,
+  "ruby.intellisense": "rubyLocate",
   "eslint.packageManager": "yarn",
-  // "sasslint.packageManager": "yarn",
-  "sasslint.nodePath": "/Users/chad/spacewaffle/.scss-lint.yml",
+  "eslint.autoFixOnSave": false,
+  "eslint.options": {
+    "configFile": "/Users/chad/storyjar/education/.eslintrc.json",
+  },
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "scssLint.runOnTextChange": true,
+  "scssLint.languages": [
+    "css",
+    "scss"
+  ],
+  "scssLint.statusBarText": "`$(telescope) scss-lint ${errors.length} $(x)`",
+  "scssLint.configDir": "/Users/chad/storyjar/",
+  "window.zoomLevel": 1,
 }
