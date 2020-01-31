@@ -1,3 +1,5 @@
-export PATH="~/bin:~/Library/Python/3.7/bin:~/Library/Python/2.7/bin:/usr/local/heroku/bin:$PATH"
+export PATH="~/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export GREP_OPTIONS="--color=auto"
-export NVM_DIR="$HOME/.nvm"

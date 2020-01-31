@@ -3,7 +3,7 @@
   status = auto
 [user]
   name = Chad Sandeman
-  email = chad@optimalworkshop.com
+  email = chadsandeman@gmail.com
 [core]
 	editor = vim
 	excludesfile = "$HOME"/.gitignore_global
